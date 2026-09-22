@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'GMarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+
+html body {
+    font-family: 'GMarketSansMedium';
+}
+
+.pc-top-bar {
+
+}
+
+.pc-top-bar .top-bar__wrap-1 {
+}
+
+.top-bar__wrap-1_left {
+    /* border: 1px dashed red; */
+}
+
+.top-bar__wrap-1_center {
+    /* border: 1px dashed red; */
+}
+
+.top-bar__wrap-1_center > a {
+    
+}
+.top-bar__wrap-1_center > a > img {
+    
+}
+
+.top-bar__wrap-1_right {
+    /* border: 1px dashed red; */
+}
+
+.top-bar__wrap-1_right .wrap-1_right_bottom {
+
+}
+.top-bar__wrap-1_right .wrap-1_right_bottom a {
+    font-size: 14px;
+    padding: 4px 20px;
+    border-radius: 30px;
+    color: white;
+    transition: color .5s;
+}
+.top-bar__wrap-1_right .wrap-1_right_bottom a:first-child {
+    background-color: #ff7e6b;
+    border: 1px solid #ff7e6b;
+}
+.top-bar__wrap-1_right .wrap-1_right_bottom a:first-child:hover {
+   background-color: #fff;
+   color: #ff7e6b;
+}
+
+.top-bar__wrap-1_right .wrap-1_right_bottom a:last-child {
+    background-color: #10adb5;
+    border: 1px solid #10adb5;
+}
+
+.login-widget {
+
+}
+.login-widget > ul > li > a {
+    font-size: 12px;
+    padding: 0 10px;
+    color: #888;
+    transition: color .3s;
+}
+
+.pc-top-bar .top-bar__wrap-2 {
+
+}
+
+.menu-box-1 {
+
+}
+.menu-box-1 .top-bar-menu-1 {
+
+}
+
+.menu-box-1 .top-bar-menu-1 > ul > li > a {
+    padding: 0 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #55585b;
+}
+
+.pc-section-video {
+
+}
+
+.pc-section-banner {
+
+}
+
+.pc-section-banner .section-banner {
+    /* border: 1px dashed red; */
+    min-height: 593px;
+}
+
+.section-banner-1 {
+    background-image: url('../images/imgi_17_섹션배너1.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.section-banner-1__text-box > span {
+    margin-top: 5px;
+}
+.section-banner-2 {
+    background-image: url('../images/imgi_18_섹션배너2.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.section-banner-2__text-box > span  {
+    margin-top: 5px;
+}
+.section-banner-3 {
+    background-image: url('../images/imgi_19_섹션배너3.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.section-banner-3__text-box > span  {
+    margin-top: 5px;
+}
+.section-banner-4 {
+    background-image: url('../images/imgi_20_섹션배너4.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.section-banner-4__text-box > span  {
+    margin-top: 5px;
+}
+.section-banner-5 {
+    min-height: 275px;
+}
+
+.section-banner-5__main-text p {
+    text-align: center;
+    color: #1ecad3;
+}
+
+.banner-5 .rolling-banner img {
+    width: 140px;
+    display: block;
+}
+
+/* 모바일 CSS */
+.mobile-top-bar {
+
+}
+.mobile-top-bar .mobile-top-bar__logo {
+
+}
+.mobile-top-bar__burger-menu > span > i {
+    color: #1ecad3;
+    font-size: 20px;
+}
+
+.mobile-section-banner .section-banner {
+
+}
+.mobile-section-banner .section-banner-1 {
+    background-image: url('../images/imgi_21_모바일섹션배너1.png');
+}
+.mobile-section-banner .section-banner-2 {
+    background-image: url('../images/imgi_22_모바일섹션배너2.png');
+}
+.mobile-section-banner .section-banner-3 {
+    background-image: url('../images/imgi_23_모바일섹션배너3.png');
+}
+.mobile-section-banner .section-banner-4 {
+    background-image: url('../images/imgi_24_모바일섹션배너4.png');
+}
+
+
+
+/* 데스크톱 및 모바일 구분 */
+/* 화면너비가 992이상일 때(데스크톱) */
+@media (min-width: 992px) {
+    header.mobile-top-bar { display: none; }
+    .mobile-section-video { display: none; }
+    .mobile-section-banner { display: none; }
+}
+
+/* 화면너비가 766 ~ 991사이일 경우(태블릿) */
+@media (min-width: 766px) and (max-width: 991px) {
+    .pc-top-bar { display: none; }
+    .mobile-section-video { display: none; }
+    .mobile-section-banner { display: none; }
+}
+
+/* 화면너비가 765이하일 때(모바일) */
+@media (max-width: 765px) {
+    .pc-top-bar { display: none; }
+    .pc-section-video { display: none; }
+    .pc-section-banner { display: none; }
+}

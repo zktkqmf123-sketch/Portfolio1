@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* .body 선택자 오류 수정 (태그 선택자 body로 변경) */
+body {
+  font-family: 'GMarketSans', 'Pretendard', 'Arial', sans-serif;
+}
+
+.header-container {
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px 10px 40px;
+}
+
+.top-menu-left {
+    flex: 1;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo img {
+  max-width: 90px;
+  height: auto;
+}
+
+.top-menu-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.menu2 {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu2 li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.menu2 li a:hover {
+  color: #333;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.btn-orange {
+  background-color: #FF7E67;
+}
+
+.btn-cyan {
+  background-color: #24C0D8;
+}
+
+.bottom-menu {
+  margin-top: 15px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 60px;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.menu-content a:hover {
+  color: #24C0D8;
+}
+
+.section-video {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ----------------------------------------------------
+   BANNER 공통 및 개별 스타일 (desk 오타 -> desc로 일괄 변경)
+---------------------------------------------------- */
+.banner-container {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.banner-left-space {
+  flex: 1;
+}
+
+.banner-center-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-center-content img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.banner-desc {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.highlight {
+  font-weight: 800;
+  color: #111111;
+}
+
+.banner-right-beer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.banner-right-beer img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  transform: translateY(20px);
+}
+
+/* 각 배너별 배경화면 및 높이 지정 */
+.section-banner1 {
+  background-image: url(https://sangwon7242.github.io/jeju_beer_project/images/%EC%84%B9%EC%85%98%EB%B0%B0%EB%84%881.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-banner2 {
+  background-image: url(https://sangwon7242.github.io/jeju_beer_project/images/%EC%84%B9%EC%85%98%EB%B0%B0%EB%84%882.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-banner3 {
+  background-image: url(https://sangwon7242.github.io/jeju_beer_project/images/%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%84%B9%EC%85%98%EB%B0%B0%EB%84%883.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-banner4 {
+  background-image: url(https://sangwon7242.github.io/jeju_beer_project/images/%EC%84%B9%EC%85%98%EB%B0%B0%EB%84%884.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-banner5 {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;	
+}
+
+.section-banner5-text {
+  text-align: center;
+  color: #1ecad3;
+}
+
+.section-banner5-text p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.banner5-logo-container {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center; 
+  gap: 30px; 
+  flex-wrap: wrap; 
+  width: 100%;
+  max-width: 1100px;
+}
+
+.banner5-logo-container img {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ----------------------------------------------------
+   반응형 미디어 쿼리 (닫는 괄호 누락 및 클래스 수정 완료)
+---------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  .top-menu {
+    padding: 20px 20px 10px 20px;
+  }
+  
+  .menu {
+    gap: 30px; 
+  }
+  
+  .section-video {
+    height: 400px; 
+  }
+  
+  .section-banner {
+    height: 600px; 
+  }
+
+  .banner-left-space {
+    display: none;
+  }
+  
+  .banner-center-logo {
+    flex: 1.2;
+  }
+  
+  .banner-right-beer {
+    flex: 0.8;
+  }
+  
+  .banner-center-content img {
+    max-width: 340px;
+  }
+  
+  .banner-right-beer img {
+    max-width: 260px;
+  }
+  
+  .banner-desc {
+    font-size: 16px; 
+  }
+} /* ◀ 누락되었던 1024px 블록 닫는 괄호 추가 */
+
+@media screen and (max-width: 768px) {
+  .top-menu {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .top-menu-left {
+    display: none;
+  }
+  
+  .logo {
+    order: 1; 
+  }
+  
+  .top-menu-right {
+    order: 2;
+    align-items: center; 
+    width: 100%;
+  }
+  
+  .bottom-menu {
+    overflow-x: auto;  
+    padding: 5px 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .menu {
+    justify-content: flex-start;
+    width: max-content; 
+    gap: 25px;
+    padding-bottom: 5px;
+  }
+  
+  .menu-content a {
+    font-size: 14px;
+  }
+  
+  .section-video {
+    height: 280px; 
+  }
+  
+  .section-banner {
+    height: auto;
+    padding: 60px 20px 0 20px;
+  }
+  
+  .banner-container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    gap: 30px;
+  }
+  
+  .banner-center-logo, .banner-right-beer {
+    flex: none;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .banner-center-content img {
+    max-width: 280px; 
+  }
+  
+  .banner-desc {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  
+  .banner-right-beer {
+    margin-top: 10px;
+  }
+  
+  .banner-right-beer img {
+    max-width: 180px;
+    transform: translateY(0); 
+  }
+  
+  .section-banner5 {
+    padding: 40px 15px;
+    gap: 25px;
+  }
+  
+  .section-banner5-text p {
+    font-size: 16px;
+  }
+  
+  .banner5-logo-container {
+    gap: 15px;
+  }
+  
+  .banner5-logo-container img {
+    width: 100px;
+  }
+}
